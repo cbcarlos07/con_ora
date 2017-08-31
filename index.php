@@ -1,13 +1,13 @@
 <?php   
-$ora_user = "dbamv"; 
-$ora_senha = "hosp#dvmns"; 
+$ora_user = "login"; 
+$ora_senha = "senha"; 
 
 $ora_bd = "(DESCRIPTION=
 (ADDRESS_LIST=
-(ADDRESS=(PROTOCOL=TCP)(HOST=10.51.26.60)(PORT=1521))
+(ADDRESS=(PROTOCOL=TCP)(HOST=ip)(PORT=1521))
 )
 (CONNECT_DATA=
-(SERVICE_NAME=prdmv)
+(SERVICE_NAME=servico)
 )
 )"; 
 if ($ora_conexao = oci_connect($ora_user,$ora_senha,$ora_bd) ) { 
